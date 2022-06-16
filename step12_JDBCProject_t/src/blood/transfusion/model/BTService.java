@@ -37,8 +37,12 @@ public class BTService {
 	}
 	
 	//새로운 BTProject 저장
-	public boolean addBTProject(BTProjectDTO btProject) throws NotExistException, SQLException{
-			return BTProjectDAO.addBTProject(btProject);
+	public boolean addBTProject(BTProjectDTO btProject, DonorDTO donor, RecipientDTO recipient) throws NotExistException, SQLException{
+		if(donor == null && recipient == null) {
+			DonorDAO.addDonor(donor);
+			RecipientDAO.addRecipient(recipient);
+		}
+		return BTProjectDAO.addBTProject(btProject);			
 		}
 		
 	

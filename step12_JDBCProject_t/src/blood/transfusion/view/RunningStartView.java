@@ -14,18 +14,18 @@ public class RunningStartView {
 		controller.allBTProjects();
 
 //		System.out.println("=====프로젝트 등록=====");
-//		controller.insertBTProject(new BTProjectDTO("C-", "bt3", "donor3", "recipient3","O-형간의 수혈"),
+//		controller.insertBTProject(new BTProjectDTO("C-", "bt4", "donor3", "recipient3","8-형간의 수혈"),
 //				new DonorDTO("donor3", "헌혈3", 35, "F", "O-", "봉사"),
 //				new RecipientDTO("recipient3", "수혈3", 3, "M", "O-", "질병"));
-				
-		
-		System.out.println("=====프로젝트 검색=====");
-		controller.BTProject("bt1");
-		
+//		controller.allBTProjects();	
+//		
+//		System.out.println("=====프로젝트 검색=====");
+//		controller.BTProject("bt1");
+//		
 //		System.out.println("=====프로젝트 수정=====");
 //		controller.updateBTProject("bt1", "I wanna go home");
-		
-		System.out.println("=====프로젝트 삭제=====");
-		controller.deleteBTProject(new BTProjectDTO("C-", "bt3", "donor3", "recipient3","O-형간의 수혈"));
+//		
+//		System.out.println("=====프로젝트 삭제=====");
+//		controller.deleteBTProject(new BTProjectDTO("C-", "bt5", "donor5", "recipient5","O-형간의 수혈"));
 	}
 }

@@ -51,9 +51,9 @@ public class BTController {
 	// 새로운 프로젝트 저장 로직
 	public void insertBTProject(BTProjectDTO btProject, DonorDTO donor, RecipientDTO recipient) {
 		try {
-			service.addDonor(donor);
-			service.addRecipient(recipient);
-			service.addBTProject(btProject);
+//			service.addDonor(donor);
+//			service.addRecipient(recipient);
+			service.addBTProject(btProject, donor, recipient);
 		} catch(SQLException s) {
 			s.printStackTrace();
 		} catch (NotExistException n) {
@@ -77,8 +77,8 @@ public class BTController {
 	public void deleteBTProject(BTProjectDTO btProject) {
 		try {
 			service.deleteBTProject(btProject.getBtProjectId());
-			service.deleteDonor(btProject.getDonorId());
-			service.deleteRecipient(btProject.getRecipientId());
+//			service.deleteDonor(btProject.getDonorId());
+//			service.deleteRecipient(btProject.getRecipientId());
 			RunningEndView.successDelete();
 		} catch(SQLException s) {
 			s.printStackTrace();
